@@ -424,6 +424,7 @@ export default function Success(props: PageProps) {
           location={locationToDisplay}
           description={bookingInfo.description}
           status={status}
+          hideOrganizerEmail={bookingInfo.eventType?.hideOrganizerEmail}
         />
       )}
       {isLoggedIn && !isEmbed && !isFeedbackMode && (
